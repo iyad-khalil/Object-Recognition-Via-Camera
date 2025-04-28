@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+AI Object Recognition
 
-## Getting Started
+This project showcases a real-time AI-powered object recognition system built using Next.js, TensorFlow.js, and Framer Motion.
+It uses your device’s camera to detect and identify objects live through your browser.
 
-First, run the development server:
+🚀 Features
+📷 Real-time video feed from your device’s camera.
 
-```bash
+🤖 AI object detection powered by the COCO-SSD model.
+
+🖌️ Bounding boxes and labels drawn live on a canvas overlay.
+
+🎨 Smooth page transitions with Framer Motion.
+
+📱 Fully responsive and mobile-friendly layout.
+
+⚡ Optimized with dynamic imports and clean architecture.
+
+🛠️ Tech Stack
+Frontend: Next.js 14, React 18, TailwindCSS
+
+AI Model: TensorFlow.js, COCO-SSD pre-trained model
+
+Animation: Framer Motion
+
+CSS Styling: TailwindCSS + Custom Variables
+
+📸 How It Works
+Grant camera permission when prompted.
+
+The app loads the AI model and starts the live video feed.
+
+Every 500ms, the system scans the video frame for objects.
+
+Detected objects are highlighted with bounding boxes and labels (class name + confidence score).
+
+📋 How to Use
+Clone the repository.
+
+Install dependencies:
+
+bash
+Copier
+Modifier
+npm install
+Run the development server:
+
+bash
+Copier
+Modifier
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open your browser and go to:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+arduino
+Copier
+Modifier
+http://localhost:3000
+Allow camera access and start exploring!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+⚠️ Notes
+This app requires camera access.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Best used on modern browsers (Chrome, Edge, Safari).
 
-## Learn More
+First model load might take a few seconds due to weight download (~MBs).
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
