@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f9f9f9;
+  --foreground: #333333;
+  --primary: #4a90e2;
+  --secondary: #7c4dff;
+  --accent: #ff4081;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+  padding: 16px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--primary);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: var(--secondary);
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-muted {
+  color: #888888;
+}
+
+.mirrored {
+  transform: scaleX(-1); /* Flips the video horizontally */
+  -webkit-transform: scaleX(-1); /* Ensures compatibility with older browsers */
+}
